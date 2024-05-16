@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+    <h1> Enter Details</h1>
+
+    <form method="POST">
+        <div class = "mb-3">
+            <label class = "form-label">Name:</label> 
+            <input class="form-control" type="name" name="name"  required><br/> 
+           
+        </div> 
+
+        <div class = "mb-3">
+            <label class="form-label">Email:</label> 
+            <input class="form-control" type="email" name="email" required><br/> 
+
+        </div>
+
+        <div class = "mb-3">
+
+            <label class="form-label">City:</label> 
+            <input class="form-control" type="text" name="city"  required><br/> 
+        </div>
+        <div class = "mb-3">
+            <label class="form-label">Country:</label> 
+            <input class="form-control" type="text" name="country" required><br/> 
+        </div>
+        <div class = "mb-3">
+            <label class="form-label">Phone number:</label> 
+            <input class="form-control" type="number" name="phone" required><br/> 
+        </div>
+        <button type = "submit" class = "btn btn-primary">Submit</button> 
+    </form> 
+   
+</body>
+{% endblock %}
